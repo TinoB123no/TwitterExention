@@ -1,0 +1,19 @@
+{
+    "manifest_version" : 3,
+    "name" : "TwitterExtension",
+    "description" : "Extention that adds a trust button to the users Twitter feed. Also records likes, tweets, ect...",
+    "version" : "1.0.0",
+    "action" : {
+        "default_icon": "twitter_icon.png"
+    },
+    "icons" : {
+        "48" : "big_twitter_icon.png"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["content.js"],
+            "css" : ["main.css"]
+        }
+    ]
+}
